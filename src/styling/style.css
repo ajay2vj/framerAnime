@@ -9,14 +9,15 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: 'Asul'; */
-	font-family: "Asul", cursive;
+	font-family: "Asul";
 }
 .bg-dark {
 	background-color: #24292e00!important;
 }
 .navbar .navbar-brand {
-  font-family: "Coiny", cursive;
+  font-family: "Asul";
 	font-size: 23px;
+	font-weight: 800;
 	color: #fff;
 }
 .navbar .navbar-brand:hover {
@@ -32,7 +33,7 @@
 .navbar-light .navbar-nav .nav-link {
 	color: rgba(255, 255, 255, 0.5);
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 16px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #fff;
@@ -82,14 +83,15 @@ section #home-section {
 	margin-top: 170px;
 }
 .sub-content-banner>h2 {
-	font-family: "Coiny", cursive;
+	font-family: "Asul";
 	color: #fff;
-	font-size: 30px;
+	font-size: 36px;
+	font-weight: 600;
 }
 .sub-content-banner>p {
-	font-family: "Coiny", cursive;
+	font-family: "Asul";
 	color: #fff;
-	font-size: 13px;
+	font-size: 15px;
 }
 .sub-content {
 	margin-top: -154px;
@@ -192,6 +194,22 @@ section #home-section {
 }
 
 /* Video Section End */
+
+/* BtN CSS */
+.btn-primary {
+	outline: none;
+	background: transparent;
+	border: 2px solid #fff;
+	width: -webkit-fill-available;
+	border-radius: 50px;
+}
+.btn-primary:hover {
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 50px;
+}
+
+
 
 /* Media Query Starts */
 @media screen and (max-width: 768px) {
