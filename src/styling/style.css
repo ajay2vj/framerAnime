@@ -94,7 +94,7 @@ section #home-section {
 	font-size: 15px;
 }
 .sub-content {
-	margin-top: -154px;
+	margin-top: 60px;
 	padding: 0px 38px;
 }
 
@@ -200,7 +200,7 @@ section #home-section {
 	outline: none;
 	background: transparent;
 	border: 2px solid #fff;
-	width: -webkit-fill-available;
+	width: 20%;
 	border-radius: 50px;
 }
 .btn-primary:hover {

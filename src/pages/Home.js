@@ -2,6 +2,7 @@ import {React} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Button } from 'react-bootstrap';
+import bike from "../images/bike.svg";
 function Home(){
 
     return(
@@ -11,8 +12,7 @@ function Home(){
 				<section className="banner-content">
           <Container>
             <Row>
-						<Col md={4}></Col>
-              <Col md={4}>
+              <Col md={6}>
 								
 									<div className="sub-content-banner">
 									<motion.div animate={{ rotate: 360 }} transition={{ duration: 2 }}>
@@ -24,8 +24,7 @@ function Home(){
 										>
 											<p style={{color:'#fff'}}>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 										</motion.div>
-										<motion.div whileHover={{ scale: 1.2, rotate: 1,
-										boxShadow: '0px 0px 8px rgb(255,255,255)'}}
+										<motion.div whileHover={{ scale: 1.2, rotate: 1}}
 											whileTap={{
 												scale: 0.2,
 												rotate: -90,
@@ -34,6 +33,11 @@ function Home(){
 									</div>
 								
               </Col>
+							<Col md={6}>
+								<div className="sub-content">
+									<img src={bike} style={{width: '100%'}} />
+								</div>
+							</Col>
             </Row>
           </Container>
         </section>
