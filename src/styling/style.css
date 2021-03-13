@@ -1,0 +1,230 @@
+
+/* NavBar CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Asul'; */
+	font-family: "Asul", cursive;
+}
+.bg-dark {
+	background-color: #24292e00!important;
+}
+.navbar .navbar-brand {
+  font-family: "Coiny", cursive;
+	font-size: 23px;
+	color: #fff;
+}
+.navbar .navbar-brand:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+}
+.navbar {
+	padding: 1.2rem 2rem;
+	z-index: 1;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: 500;
+	font-size: 14px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+/* Navbar CSS End */
+
+/* CSS Scrool Bar */
+
+::-webkit-scrollbar {
+  width: 8px;
+	
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d4144; 
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d4144; 
+}
+/* Scroll Bar End */
+
+/* Home Section CSS */
+section #home-section {
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+}
+#home-section {
+	position: absolute;
+	top: -7px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(#35373a, #24292e);
+	transform: skewY(-6deg);
+	transform-origin: top left;
+}
+.banner-content {
+	margin-top: 170px;
+}
+.sub-content-banner>h2 {
+	font-family: "Coiny", cursive;
+	color: #fff;
+	font-size: 30px;
+}
+.sub-content-banner>p {
+	font-family: "Coiny", cursive;
+	color: #fff;
+	font-size: 13px;
+}
+.sub-content {
+	margin-top: -154px;
+	padding: 0px 38px;
+}
+
+/* Home Section End */
+
+
+/* Video Section CSS */
+
+.video-section{
+	padding-top: 250px;
+	padding-bottom: 100px;
+}
+
+.video-play-button {
+	position: relative;
+	z-index: 10;
+	margin: -169px 0px 0px 111px;
+	top: 33%;
+	left: 25%;
+	display: block;
+	box-sizing: content-box;
+	width: 2rem;
+	height: 2.60rem;
+	padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+	border-radius: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+  
+.video-play-button:before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 4.75rem;
+	height: 4.75rem;
+	border-radius: 50%;
+	background: #272c30;
+	animation: pulse-border 1500ms ease-out infinite;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+  
+.video-play-button:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 4.700rem;
+	height: 4.700rem;
+	border-radius: 50%;
+	background: #272b30;
+	transition: all 200ms;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+  
+.video-play-button span {
+	position: relative;
+	display: block;
+	z-index: 3;
+	top: 0.375rem;
+	left: 0.25rem;
+	width: 0;
+	height: 0;
+	border-left: 1.625rem solid #fff;
+	border-top: 1rem solid transparent;
+	border-bottom: 1rem solid transparent;
+}
+  
+@keyframes pulse-border {
+	0% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
+}
+.content-video{
+	margin-top: 30px;
+}
+.video-play-img>img {
+	padding: 0px 40px;
+	width: 100%;
+}
+.content-video>p{
+	font-size: 14px;
+}
+
+/* Video Section End */
+
+/* Media Query Starts */
+@media screen and (max-width: 768px) {
+  .sub-content {
+		margin-top: 25px;
+		padding: 0px 38px;
+	}
+	.navbar-light .navbar-toggler{
+		border: 0px;
+	}
+	.video-play-button {
+		position: relative;
+		z-index: 10;
+		margin: -98px 0px 0px 85px;
+		top: 33%;
+		left: 25%;
+		display: block;
+		box-sizing: content-box;
+		width: 2rem;
+		height: 2.60rem;
+		padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+		border-radius: 50%;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+	.content-video {
+    margin-top: 50px;
+	}
+	.content-video>p{
+		text-align: center;
+		font-size: 14px;
+	}
+}
+
+
