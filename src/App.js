@@ -1,12 +1,17 @@
-import { motion } from "framer-motion"
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="framer-anime">
-      <motion.h1 animate={{fontSize: 50, color: '#ff2994', textAlign: 'center', rotateZ: 10}}>Framer Animation</motion.h1>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
 export default App;
-
