@@ -3,6 +3,18 @@ import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Button } from 'react-bootstrap';
 import bike from "../images/bike.svg";
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+		transition:{
+			delay:0.2, 
+			duration:1
+		}
+  }
+}
 function Home(){
 
     return(
@@ -15,8 +27,11 @@ function Home(){
               <Col md={6}>
 								
 									<div className="sub-content-banner">
-									<motion.div animate={{ rotate: 360 }} transition={{ duration: 2 }}>
-										<motion.h2 animate={{color:'#9c9b9b'}}>PizzaHut</motion.h2>
+									<motion.div 
+									variants={item}
+									initial="hidden"
+									animate="visible">
+										<h2 style={{color: '#fff'}}>PizzaHut</h2>
 									</motion.div>
 										<motion.div initial={{opacity: 0}}
 										 animate={{opacity: 1}}
@@ -24,12 +39,17 @@ function Home(){
 										>
 											<p style={{color:'#fff'}}>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 										</motion.div>
-										<motion.div whileHover={{ scale: 1.2, rotate: 1}}
+										<motion.button 
+											whileHover={{ 
+												scale: 1.2, 
+												rotate: 1,
+												boxShadow: '0px 0px 8px rgb(255,255,255)'
+											}} 
 											whileTap={{
 												scale: 0.2,
 												rotate: -90,
 											}}
-											><Button variant="primary" className="btn-anime">welcome</Button></motion.div>
+											className="button">welcome</motion.button>
 									</div>
 								
               </Col>
