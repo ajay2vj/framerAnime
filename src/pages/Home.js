@@ -1,7 +1,6 @@
 import {React} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { Button } from 'react-bootstrap';
 import bike from "../images/bike.svg";
 
 const item = {
