@@ -35,7 +35,7 @@ function Home(){
               </Col>
 							<Col md={6}>
 								<div className="sub-content">
-									<img src={bike} style={{width: '100%'}} />
+									<img src={bike} style={{width: '100%'}} alt="bike" />
 								</div>
 							</Col>
             </Row>
